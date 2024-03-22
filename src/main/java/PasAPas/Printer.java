@@ -18,7 +18,9 @@ public class Printer {
             System.out.println("Terrain : " + planet.getString("terrain"));
             System.out.println("Surface water : " + planet.getString("surface_water"));
             System.out.println("Population : " + planet.getString("population"));
-
+            System.out.println("Residents : " + planet.getJSONArray("residents"));
+            System.out.println("Films : " + planet.getJSONArray("films"));
+           
 //            // Impression des résidents de la planète
 //            JSONArray residents = planet.getJSONArray("residents");
 //            System.out.println("\nResidents :");

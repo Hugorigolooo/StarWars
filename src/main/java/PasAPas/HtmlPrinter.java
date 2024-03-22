@@ -32,26 +32,28 @@ public class HtmlPrinter {
                     htmlBuilder.append("<p>").append("Terrain: ").append(planet.getString("terrain")).append("</p>");
                     htmlBuilder.append("<p>").append("Surface Water: ").append(planet.getString("surface_water")).append("</p>");
                     htmlBuilder.append("<p>").append("Population: ").append(planet.getString("population")).append("</p>");
+//                   htmlBuilder.append("<p>").append("Residents: ").append("<li>").append(planet.getJSONArray("residents")).append("</li>").append("</p>");
+//                    htmlBuilder.append("<p>").append("Films: ").append("<li>").append(planet.getJSONArray("films")).append("</li>").append("</p>");
                     System.out.println(codeHtml);
 //                    // Ajoute les résidents
-//                    JSONArray residents = planet.getJSONArray("residents");
-//                    if (residents.length() > 0) {
-//                        htmlBuilder.append("<p>").append("Residents: ").append("</p><ul>");
-//                        for (int j = 0; j < residents.length(); j++) {
-//                            htmlBuilder.append("<li>").append(residents.getString(j)).append("</li>");
-//                        }
-//                        htmlBuilder.append("</ul>");
-//                    }
-//
-//                    // Ajoute les films
-//                    JSONArray films = planet.getJSONArray("films");
-//                    if (films.length() > 0) {
-//                        htmlBuilder.append("<p>").append("Films: ").append("</p><ul>");
-//                        for (int j = 0; j < films.length(); j++) {
-//                            htmlBuilder.append("<li>").append(films.getString(j)).append("</li>");
-//                        }
-//                        htmlBuilder.append("</ul>");
-//                    }
+                    JSONArray residents = planet.getJSONArray("residents");
+                    if (residents.length() > 0) {
+                        htmlBuilder.append("<p>").append("Residents: ").append("</p><ul>");
+                        for (int j = 0; j < residents.length(); j++) {
+                            htmlBuilder.append("<li>").append(residents.getString(j)).append("</li>");
+                       }
+                        htmlBuilder.append("</ul>");
+                    }
+
+                    // Ajoute les films
+                    JSONArray films = planet.getJSONArray("films");
+                    if (films.length() > 0) {
+                        htmlBuilder.append("<p>").append("Films: ").append("</p><ul>");
+                        for (int j = 0; j < films.length(); j++) {
+                            htmlBuilder.append("<li>").append(films.getString(j)).append("</li>");
+                        }
+                        htmlBuilder.append("</ul>");
+                    }
                }
             }
             htmlBuilder.append("</body></html>");

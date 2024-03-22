@@ -1,0 +1,35 @@
+{
+	"num": "01"
+	"nom": "VALENTIN"
+	"prenom": "Hugo"
+	"mail": "hugovtn2004@gmail.com"
+	"login": "Hugo Valentin"
+	"password": "azerty"
+}
+
+{
+	"num": "02"
+	"nom": "PITTMAN"
+	"prenom": "Joanna"
+	"mail": "joaana.piitman@example.com"
+	"login": "Joanna PITTMAN"
+	"password": "123456789"
+}
+
+<personne>
+	<num>01</num>
+	<nom>VALENTIN</nom>
+	<prenom>Hugo</prenom>
+	<mail>hugovtn2004@gmail.com</mail>
+	<login>Hugo Valentin</login>
+	<password>azerty</password>
+</personne>
+
+<personne>
+	<num>02</num>
+	<nom>PITTMAN</nom>
+	<prenom>Joanna</prenom>
+	<mail>joaana.piitman@example.com</mail>
+	<login>Joanna PITTMAN</login>
+	<password>123456789</password>
+</personne>

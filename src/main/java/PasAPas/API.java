@@ -11,14 +11,14 @@ import org.json.JSONObject;
 public class API {
 
     // URL de base de l'API pour les planètes
-    private static final String PLANETS_API_URL = "https://swapi.tech/api/planets/";
+    private static final String PLANETS_API_URL = "https://swapi.dev/api/planets/";
 
     public JSONObject getPlanets(String searchquery) {
         try {
             // Construction de l'URL de l'API avec la recherche si spécifiée
             String urlString = PLANETS_API_URL;
             if (searchquery != null && !searchquery.isEmpty()) {
-                urlString += "?name=" + searchquery;
+                urlString += "?search=" + searchquery;
             }
             
             System.out.println("searchquery : "+ searchquery);

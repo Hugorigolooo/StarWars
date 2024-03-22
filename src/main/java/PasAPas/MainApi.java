@@ -15,7 +15,7 @@ public class MainApi {
             // Appel à l'API pour récupérer les données des planètes
             JSONObject jsonObject = apiCalls.getPlanets("Alderaan");
             // Extraction des résultats des planètes
-            JSONArray planetresults = jsonObject.getJSONArray("result");
+            JSONArray planetresults = jsonObject.getJSONArray("results");
             
             System.out.println(planetresults);
             // Impression des détails des planètes
@@ -28,7 +28,7 @@ public class MainApi {
             String htmlContent = htmlPrinter.printHtmlDetailsPlanets(jsonObject);
 
             // Spécifier le chemin du fichier où vous souhaitez enregistrer le contenu HTML
-            String filePath = "W:\\Cours\\Java\\StarWars\\test_species.html";
+            String filePath = "W:\\Cours\\Java\\StarWars\\test.html";
 
             // Enregistrer le contenu HTML dans le fichier spécifié
             htmlPrinter.saveHtmlToFile(htmlContent, filePath);

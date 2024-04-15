@@ -16,11 +16,6 @@
 	"password": "123456789"
 }
 
-
-
-
-
-
 <personne>
 	<num>01</num>
 	<nom>VALENTIN</nom>

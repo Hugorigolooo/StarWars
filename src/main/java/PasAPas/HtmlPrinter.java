@@ -35,6 +35,8 @@ public class HtmlPrinter {
 //                   htmlBuilder.append("<p>").append("Residents: ").append("<li>").append(planet.getJSONArray("residents")).append("</li>").append("</p>");
 //                    htmlBuilder.append("<p>").append("Films: ").append("<li>").append(planet.getJSONArray("films")).append("</li>").append("</p>");
                     System.out.println(codeHtml);
+                    
+                    
 //                    // Ajoute les résidents
                     JSONArray residents = planet.getJSONArray("residents");
                     if (residents.length() > 0) {
@@ -45,6 +47,7 @@ public class HtmlPrinter {
                         htmlBuilder.append("</ul>");
                     }
 
+                    
                     // Ajoute les films
                     JSONArray films = planet.getJSONArray("films");
                     if (films.length() > 0) {
@@ -67,6 +70,7 @@ public class HtmlPrinter {
         return codeHtml;
     }
     
+	// Méthode pour écrire le code HTML dans un fichier .html
     public void saveHtmlToFile(String htmlContent, String filePath) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(htmlContent);
